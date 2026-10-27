@@ -1,0 +1,80 @@
+{
+  "type": "mosqueCalendar",
+  "schemaVersion": 1,
+  "mosque": {
+    "id": "uchebnaya-mechet",
+    "name": "Учебная мечеть",
+    "cityId": "uchebny-gorod",
+    "city": "Учебный город",
+    "timezone": "Europe/Moscow"
+  },
+  "validFrom": "2026-01-01",
+  "validUntil": "2026-12-31",
+  "source": "ТЕСТ: вымышленные данные для проверки программы, не для намаза",
+  "revision": "demo-1",
+  "demo": true,
+  "iqamah": {
+    "rules": [
+      {
+        "prayer": "FAJR",
+        "from": "2026-01-01",
+        "mode": "OFFSET",
+        "minutes": 15
+      },
+      {
+        "prayer": "DHUHR",
+        "from": "2026-01-01",
+        "mode": "OFFSET",
+        "minutes": 15
+      },
+      {
+        "prayer": "ASR",
+        "from": "2026-01-01",
+        "mode": "OFFSET",
+        "minutes": 10
+      },
+      {
+        "prayer": "MAGHRIB",
+        "from": "2026-01-01",
+        "mode": "OFFSET",
+        "minutes": 5
+      },
+      {
+        "prayer": "ISHA",
+        "from": "2026-01-01",
+        "mode": "OFFSET",
+        "minutes": 10
+      },
+      {
+        "prayer": "JUMUAH",
+        "from": "2026-01-01",
+        "mode": "FIXED",
+        "time": "13:00",
+        "start": "12:30"
+      },
+      {
+        "prayer": "ASR",
+        "from": "2026-10-26",
+        "exception": true,
+        "mode": "FIXED",
+        "time": "15:40"
+      }
+    ]
+  },
+  "ramadan": [
+    {
+      "firstFast": "2026-02-18",
+      "eid": "2026-03-20"
+    }
+  ],
+  "events": [
+    {
+      "id": "uchebnaya-vstrecha",
+      "title": "Пример: встреча после намаза",
+      "from": "2026-10-26",
+      "titleTatar": "Мисал: намаздан соң очрашу",
+      "start": "18:00",
+      "end": "20:00"
+    }
+  ]
+}
